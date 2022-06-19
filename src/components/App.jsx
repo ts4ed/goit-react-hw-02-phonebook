@@ -16,7 +16,7 @@ class App extends Component {
       el => el.name.toLowerCase() === data.name.toLowerCase()
     );
     if (suitableEl) {
-      return alert('Этот человек уже есть в контактах :)');
+      return alert(`${data.name} уже есть в контактах`);
     }
     this.setState(({ contacts }) => ({
       contacts: [data, ...contacts],
