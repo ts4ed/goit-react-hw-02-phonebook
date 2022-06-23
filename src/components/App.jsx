@@ -19,7 +19,7 @@ class App extends Component {
       return alert(`${data.name} уже есть в контактах`);
     }
     this.setState(({ contacts }) => ({
-      contacts: [data, ...contacts],
+      contacts: [...contacts, data],
     }));
   };
 
